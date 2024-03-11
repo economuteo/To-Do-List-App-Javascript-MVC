@@ -1,0 +1,152 @@
+body {
+    background: rgb(240, 240, 240);
+}
+
+/* Title */
+.title {
+    font-size: 30px;
+    color: rgb(45, 71, 81);
+}
+
+/* Form */
+.form {
+    display: grid;
+    grid-template-columns: 200px 50px 50px;
+    grid-template-rows: 30px;
+    gap: 5px;
+}
+
+.submitButton {
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.resetButton {
+    border-radius: 5px;
+    background-color: rgb(255, 89, 0);
+}
+
+/* Current Tasks */
+.currentTasks {
+    color: rgb(45, 71, 81);
+}
+
+/* To Do List */
+.toDoList {
+    box-sizing: border-box;
+    display: grid;
+    padding: 0px;
+    margin-top: 20px;
+    grid-template-columns: minmax(200px, 400px);
+    row-gap: 10px;
+    list-style-type: none;
+}
+
+/* To Do Task */
+.listItem {
+    display: block;
+    border-radius: 10px;
+}
+
+.toDoPack {
+    display: grid;
+    grid-template-columns: 10% 60% repeat(3, minmax(10%, 1fr));
+    grid-template-rows: minmax(35px, auto);
+    align-items: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+/* Radio Buttons */
+#radioButton {
+    display: none;
+}
+
+#customRadioButtonParent {
+    align-self: center;
+    justify-self: center;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-image: transparent;
+}
+
+#customRadioButton {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    background-image: transparent;
+    cursor: pointer;
+}
+
+#customRadioButton:hover {
+    background-color: gray;
+}
+
+/* Text Boxes */
+#defaultTextBox {
+    word-wrap: break-word;
+}
+
+#editingTextBox {
+    box-sizing: border-box;
+    height: 25px;
+    width: 98%;
+}
+
+#defaultTextBox,
+#editingTextBox {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#edit {
+    box-sizing: border-box;
+    grid-column: 4/5;
+}
+
+#delete {
+    box-sizing: border-box;
+    grid-column: 5;
+}
+
+/* Edit, Delete, Save, Cancel Buttons */
+#edit,
+#delete {
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+}
+
+#save,
+#cancel {
+    height: 25px;
+    font-size: 8px;
+}
+
+#edit,
+#delete,
+#save,
+#cancel {
+    box-sizing: border-box;
+    padding: 0px;
+    line-height: 1;
+    text-align: center;
+}
+
+#edit:hover,
+#delete:hover,
+#save:hover,
+#cancel:hover {
+    background-color: rgb(255, 89, 0);
+    border-radius: 5px;
+}
